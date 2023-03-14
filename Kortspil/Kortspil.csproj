@@ -53,6 +53,8 @@
     <None Remove="Billeder\Es-Ruder.jpg" />
     <None Remove="Billeder\Es-Spar.jpg" />
     <None Remove="Billeder\Green_back.jpg" />
+    <None Remove="Billeder\joker.jpg" />
+    <None Remove="Billeder\jokerOriginal.jpg" />
     <None Remove="Billeder\Knægt-Hjerter.jpg" />
     <None Remove="Billeder\Knægt-Klør.jpg" />
     <None Remove="Billeder\Knægt-Ruder.jpg" />
@@ -61,6 +63,7 @@
     <None Remove="Billeder\Konge-Klør.jpg" />
     <None Remove="Billeder\Konge-Ruder.jpg" />
     <None Remove="Billeder\Konge-Spar.jpg" />
+    <None Remove="Billeder\NA.jpg" />
     <None Remove="Billeder\purple_back.jpg" />
     <None Remove="Billeder\Red_back.jpg" />
     <None Remove="Billeder\Yellow_back.jpg" />
@@ -205,6 +208,12 @@
     <Resource Include="Billeder\Green_back.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Billeder\joker.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Billeder\jokerOriginal.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Billeder\Knægt-Hjerter.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -227,6 +236,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Billeder\Konge-Spar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Billeder\NA.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Billeder\purple_back.jpg">
