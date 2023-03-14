@@ -19,13 +19,11 @@ namespace Kortspil
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            // declare vars here, so I don't have to declare them twice in if else
             int kortnummer;
             string filnavn;
             string url;
             Uri uri;
-            
+
             // Tjek om input er et tal
             if (Kort.Text.All(char.IsDigit))
             {
@@ -35,35 +33,19 @@ namespace Kortspil
                 uri = new(url, UriKind.Relative);
                 BitmapImage image = new(uri);
                 Billede.Source = image;
-
-                //    int kortnummer = Convert.ToInt32(Kort.Text);
-                //    string filnavn = FindBillede(kortnummer);
-                //    string url = $"/Billeder/{filnavn}";
-                //    Uri uri = new(url, UriKind.Relative);
-                //    BitmapImage image = new(uri);
-                //    Billede.Source = image;
             }
             else
             {
-                // kortnummer = Convert.ToInt32(Kort.Text);
                 filnavn = "jokerOriginal.jpg";
                 url = $"/Billeder/{filnavn}";
                 uri = new(url, UriKind.Relative);
                 BitmapImage image = new(uri);
                 Billede.Source = image;
-
-                // show NA.jpg here
-                //string filnavn = "jokerOriginal.jpg";
-                //string url = $"/Billeder/{filnavn}";
-                //Uri uri = new(url, UriKind.Relative);
-                //BitmapImage image = new(uri);
-                //Billede.Source = image;
             }
 
-
-            /////////////////////////////////////////
-            // Her er original code
-            /////////////////////////////////////////
+            /*
+            Her er original code
+            */
             //int kortnummer = Convert.ToInt32(Kort.Text);
             //string filnavn = FindBillede(kortnummer);
             //string url = $"/Billeder/{filnavn}";
@@ -75,21 +57,21 @@ namespace Kortspil
 
         private string FindBillede(int kortnummer)
         {
-            if (kortnummer <= 0 || kortnummer > 52 ) 
+            if (kortnummer <= 0 || kortnummer > 52)
             {
-                return "jokerOriginal.jpg";           
+                return "jokerOriginal.jpg";
             }
-           
+
             int kortVærdi = (kortnummer - 1) % 13 + 1;  // Beregn kortets rang
             int kulør = (kortnummer - 1) / 13 + 1;  // Beregn kortets kulør
 
             // Konverter kulør-nummeret til en string
-            string kulørFarve = "";          
-            if(kulør == 1)
+            string kulørFarve = "";
+            if (kulør == 1)
             {
                 kulørFarve = "spar";
             }
-            else if(kulør == 2)
+            else if (kulør == 2)
             {
                 kulørFarve = "ruder";
             }
@@ -124,7 +106,7 @@ namespace Kortspil
             }
 
             // Sammensæt navnet og returner 
-            return $"{rankNavn}-{kulørFarve}.jpg";           
+            return $"{rankNavn}-{kulørFarve}.jpg";
 
         }
     }
